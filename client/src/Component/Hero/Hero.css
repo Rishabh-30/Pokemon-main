@@ -1,0 +1,156 @@
+/* .Hero{
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem;
+}
+
+
+.card {
+  --font-color: #323232;
+  --bg-color: #e0e0e0;
+  width: 325px;
+  height: 375px;
+  border-radius: 20px;
+  background: var(--body_background);
+  display: flex;
+  flex-direction: column;
+  transition: .4s;
+  
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px 2px #5a5a5a;
+}
+
+.card__img img{
+  width: 325px;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.card__descr-wrapper {
+  padding: 15px;
+  display: grid;
+}
+
+.card__title {
+  color: var(--body_color);
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.card__descr {
+  color: var(--body-color);
+}
+
+.card__links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+}
+
+.action {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: var(--body-color);
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: #2563EB;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.action span {
+  transition: .3s ease;
+}
+
+.action:hover span {
+  transform: translateX(4px);
+}
+
+.Hero-Container{
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+} */
+
+
+
+
+
+
+
+/* Base styles for all screen sizes */
+.Hero-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  margin: 10px;
+}
+
+.card__img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+  padding: 0 20px;
+}
+
+.card__descr {
+  font-size: 0.9rem;
+  padding: 0 20px;
+}
+
+.card__links {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .Hero-Container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .card__descr {
+    font-size: 0.8rem;
+  }
+} 

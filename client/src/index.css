@@ -1,0 +1,24 @@
+:root{
+  --body_background:rgb(234, 232, 232);
+  --body_color:rgb(35, 35, 35);
+  --footer_background:#eef1f5;
+  --footer_color:black;
+}
+
+[data-theme="dark"]{
+  --body_background:#2b2a2a;
+  --body_color:rgb(224, 225, 226);
+  --footer_background:black;
+  --footer_color:white;
+}
+
+
+
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+body{
+  box-sizing: border-box;
+}

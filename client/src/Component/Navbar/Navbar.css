@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(45deg, #04b7d6, #ecdcf0, #6882d7);
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  animation: headerAnimation 3s infinite alternate;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+
+@media (max-width:576px) {
+  .nav a{
+    display: none;
+  }
+}
